@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="Page">
+        <div class="title"><h1>Kości</h1></div>
+        <div class="table">
+            <div class="dice-box" onclick = "hold0(this)"><img id="0"src="icons/0dice.png"></div>
+            <div class="dice-box" onclick = "hold1(this)"><img id="1"src="icons/0dice.png"></div>
+            <div class="dice-box" onclick = "hold2(this)"><img id="2"src="icons/0dice.png"></div>
+            <div class="dice-box" onclick = "hold3(this)"><img id="3"src="icons/0dice.png"></div>
+            <div class="dice-box" onclick = "hold4(this)"><img id="4"src="icons/0dice.png"></div>
+        </div>
+        <div class="controls">
+            <button class="draw" onclick="rzutKoscmi(click)">Rzut kośćmi</button>
+        </div>
+        <div class="results">
+            <div class="figure">
+                <div id="name"><h4>Nazwa Figury</h4></div>
+                <div class="score" id="0"><h4>Ilość pkt:</h4></div>
+            </div>
+            <div class="figure">
+                <div id="1">Jedynki <img src="icons/1.png"></div>
+                <div class="score" id="1">0</div>
+            </div>
+            <div class="figure">
+                <div id="2">Dwójki <img src="icons/2.png"></div>
+                <div class="score" id="2">0</div>
+            </div>
+            <div class="figure">
+                <div id="3">Trójki <img src="icons/3.png"></div>
+                <div class="score" id="3">0</div>
+            </div>
+            <div class="figure">
+                <div id="4">Czwórki <img src="icons/4.png"></div>
+                <div class="score" id="4">0</div>
+            </div>
+            <div class="figure">
+                <div id="5">Piątki <img src="icons/5.png"></div>
+                <div class="score" id="5">0</div>
+            </div>
+            <div class="figure">
+                <div id="6">Szóstki <img src="icons/6.png"></div>
+                <div class="score" id="6">0</div>
+            </div>
+            <div class="figure">
+                <div id="3x">Trzy takie same <img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"></div>
+                <div class="score" id="7">0</div>
+            </div>
+            <div class="figure">
+                <div id="4x">Cztery takie same <img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"></div>
+                <div class="score" id="8">0</div>
+            </div>
+            <div class="figure">
+                <div id="32">Full <img src="icons/1.png"><img src="icons/1.png"><img src="icons/2.png"><img src="icons/2.png"><img src="icons/2.png"></div>
+                <div class="score" id="9">0</div>
+            </div>
+            <div class="figure">
+                <div id="smallStraight">Mały strit <img src="icons/1.png"><img src="icons/2.png"><img src="icons/3.png"><img src="icons/4.png"></div>
+                <div class="score" id="10">0</div>
+            </div>
+            <div class="figure">
+                <div id="bigStraight">Duży strit <img src="icons/1.png"><img src="icons/2.png"><img src="icons/3.png"><img src="icons/4.png"><img src="icons/5.png"></div>
+                <div class="score" id="11">0</div>
+            </div>
+            <div class="figure">
+                <div id="general">Generał <img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"><img src="icons/1.png"></div>
+                <div class="score" id="12">0</div>
+            </div>
+            <div class="figure">
+                <div id="chance">Szansa <img src="icons/0dice.png"><img src="icons/0dice.png"><img src="icons/0dice.png"><img src="icons/0dice.png"><img src="icons/0dice.png"></div>
+                <div class="score" id="13">0</div>
+            </div>
+            <div class="figure">
+                <div id="sum">Suma punktów:</div>
+                <div class="score" id="14">0.pkt</div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
